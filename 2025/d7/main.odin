@@ -15,6 +15,7 @@ main :: proc() {
 
 	fmt.println()
 
+	timer_start = time.now()
 	fmt.println("Part 2:")
 	p2.part2()
 	fmt.println("Time:", time.since(timer_start))
