@@ -4,7 +4,7 @@ import "core:fmt"
 import "core:time"
 
 import "p1"
-// import "p2"
+import "p2"
 
 main :: proc() {
 	timer_start := time.now()
@@ -12,10 +12,10 @@ main :: proc() {
 	p1.run()
 	fmt.println("Time:", time.since(timer_start))
 
-	// fmt.println()
-	//
-	// timer_start = time.now()
-	// fmt.println("Part 2:")
-	// p2.part2()
-	// fmt.println("Time:", time.since(timer_start))
+	fmt.println()
+
+	timer_start = time.now()
+	fmt.println("Part 2:")
+	p2.run()
+	fmt.println("Time:", time.since(timer_start))
 }
