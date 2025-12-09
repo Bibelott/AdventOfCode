@@ -5,6 +5,7 @@ import "core:time"
 
 import "p1"
 import "p2"
+import "p2_sorted"
 
 main :: proc() {
 	timer_start := time.now()
@@ -17,5 +18,12 @@ main :: proc() {
 	timer_start = time.now()
 	fmt.println("Part 2:")
 	p2.run()
+	fmt.println("Time:", time.since(timer_start))
+
+	fmt.println()
+
+	timer_start = time.now()
+	fmt.println("Part 2 - Sorted:")
+	p2_sorted.run()
 	fmt.println("Time:", time.since(timer_start))
 }
